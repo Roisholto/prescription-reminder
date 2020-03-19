@@ -1,0 +1,13 @@
+{
+  "type":"object",
+  "properties":{
+    "med_id":{
+      "type":"integer"
+    },
+    "portion":{
+      "type":"integer",
+      "min":"1"
+    }
+  },
+  "required":["med_id","portion"]
+}

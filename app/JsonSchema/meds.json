@@ -1,0 +1,29 @@
+{
+  "type":"array",
+  "items":{
+    "type":"object",
+    "properties":{
+      "name":{
+        "type":"string"
+      },
+      "dosage":{
+        "type":"number"
+      },
+      "dosage_interval":{
+        "type":"integer"
+      },
+      "dosage_count":{
+        "type":"string",
+        "default":"number",
+      },
+      "med_group_id":{
+        "type":"integer"
+      },
+      "start_at":{
+        "type":"string",
+        "format":"date-time"
+      }
+    },
+    "required":["name", "dosage", "interval", "start_at", "dosage_count", "med_group_id"]
+  }
+}

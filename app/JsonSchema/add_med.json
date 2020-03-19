@@ -1,0 +1,38 @@
+{
+  "type":"object",
+  "properties":{
+    "label":{
+      "type":"string"
+    },
+    "meds":{
+      "type":"array",
+      "items":{
+        "type":"object",
+        "properties":{
+          "name":{
+            "type":"string"
+          },
+          "dosage":{
+            "type":"number"
+          },
+          "interval":{
+            "type":"integer"
+          },
+          "dosage_count":{
+            "type":"number",
+            "default":"0"
+          },
+          "start_at":{
+            "type":"string",
+            "format":"date-time"
+          }
+        },
+        "required":["name", "dosage", "dosage_interval", "start_at", "dosage_count"]
+      }
+    },
+    "notes":{
+      "type":"string"
+    }
+  },
+  "required":["label", "meds"]
+}
