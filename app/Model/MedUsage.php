@@ -10,4 +10,5 @@ class MedUsage extends Model
   protected $table = 'med_usages' ;
 
   // function(){}
+
 }

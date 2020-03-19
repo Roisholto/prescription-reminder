@@ -62,5 +62,9 @@ class MedHandle {
   public static function getUsage(int $uid, int $med_id){
 
   }
+
+  public static function sendNotifications(){
+    Med::with(['medUsage']) ;
+  }
 }
 ?>
