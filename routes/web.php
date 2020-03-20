@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-header('Access-Control-Allow-Credentials: true');
 Route::get('/', function () {
     return view('welcome');
 });
